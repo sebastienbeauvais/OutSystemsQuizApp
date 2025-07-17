@@ -2,5 +2,5 @@
 
 public class ScoreHistory
 {
-    public Dictionary<string, (int Correct, int Total)> SectionScores { get; set; } = new();
+    public Dictionary<string, SectionScore> SectionScore { get; set; } = new();
 }

@@ -8,10 +8,10 @@ using System.Xml.Serialization;
 public class QuizManager
 {
     private List<Question> _questions = new();
-    private ScoreHistory _history = new();
+    private ScoreHistory _history;
     private string baseDirectory = AppContext.BaseDirectory;
     private const string QuestionPath = "data/questions.json";
-    private const string HistoryPath = "data/history.json";
+    private const string HistoryPath = "data\\history.json";
     private const string InitialLoadQuestionsPath = "Questions\\questions.json";
 
     public void EnsureDataFolderExists()
@@ -50,17 +50,24 @@ public class QuizManager
 
     public void LoadHistory()
     {
-        if (File.Exists(HistoryPath))
+        var historyFullPath = Path.Combine(baseDirectory, HistoryPath);
+        if (File.Exists(historyFullPath))
         {
-            var json = File.ReadAllText(HistoryPath);
+            var json = File.ReadAllText(Path.Combine(baseDirectory, HistoryPath));
             _history = JsonSerializer.Deserialize<ScoreHistory>(json);
+        }
+        else
+        {
+            _history = new ScoreHistory();
         }
     }
 
     public void SaveHistory()
     {
         var json = JsonSerializer.Serialize(_history, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(HistoryPath, json);
+        var historyFullPath = Path.Combine(baseDirectory, HistoryPath);
+        Console.WriteLine("[Info] Saving history to " + historyFullPath);
+        File.WriteAllText(historyFullPath, json);
     }
 
     public void TakeQuiz()
@@ -89,18 +96,23 @@ public class QuizManager
         foreach (var sec in sectionResults)
         {
             Console.WriteLine($"{sec.Key}: {sec.Value.Correct}/{sec.Value.Total} = {(sec.Value.Correct * 100 / sec.Value.Total)}%");
-            if (!_history.SectionScores.ContainsKey(sec.Key))
-                _history.SectionScores[sec.Key] = (0, 0);
 
-            var (oldC, oldT) = _history.SectionScores[sec.Key];
-            _history.SectionScores[sec.Key] = (oldC + sec.Value.Correct, oldT + sec.Value.Total);
+            if (!_history.SectionScore.ContainsKey(sec.Key))
+            {
+                _history.SectionScore[sec.Key] = new SectionScore { Correct = 0, Total = 0 };
+            }
+
+            var oldScore = _history.SectionScore[sec.Key];
+            oldScore.Correct += sec.Value.Correct;
+            oldScore.Total += sec.Value.Total;
+            _history.SectionScore[sec.Key] = oldScore;
         }
     }
 
     public void ShowSectionPerformance()
     {
         Console.WriteLine("\nHistorical Performance:");
-        foreach (var sec in _history.SectionScores)
+        foreach (var sec in _history.SectionScore)
         {
             if (sec.Value.Total == 0) continue;
             Console.WriteLine($"{sec.Key}: {sec.Value.Correct}/{sec.Value.Total} = {(sec.Value.Correct * 100 / sec.Value.Total)}%");
