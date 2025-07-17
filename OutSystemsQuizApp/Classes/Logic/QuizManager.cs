@@ -9,9 +9,10 @@ public class QuizManager
 {
     private List<Question> _questions = new();
     private ScoreHistory _history = new();
+    private string baseDirectory = AppContext.BaseDirectory;
     private const string QuestionPath = "data/questions.json";
     private const string HistoryPath = "data/history.json";
-    private const string InitialLoadQuestionsPath = "Question/questions.json";
+    private const string InitialLoadQuestionsPath = "Questions\\questions.json";
 
     public void EnsureDataFolderExists()
     {
@@ -34,7 +35,10 @@ public class QuizManager
             Console.WriteLine("[Info] If you want to add additional questions, please update the questions.json file.");
             Console.WriteLine("[Info] This can be found under " + AppDomain.CurrentDomain.BaseDirectory + "data");
             // Copy questions to root
-            File.Copy(InitialLoadQuestionsPath, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data"), true);
+            string projectRoot = Directory.GetParent(baseDirectory)!.Parent!.Parent!.Parent!.FullName;
+            string firstLoadQuestionsPath = Path.Combine(projectRoot, InitialLoadQuestionsPath);
+            string questionsCopyPath = Path.Combine(baseDirectory, "data", "questions.json");
+            File.Copy(firstLoadQuestionsPath, questionsCopyPath, true);
             ReadQuestionBank();
         }
     }
