@@ -32,9 +32,9 @@ public class QuizManager
         {
             Console.WriteLine("[Info] Transferring Question Bank to Root");
             Console.WriteLine("[Info] If you want to add additional questions, please update the questions.json file.");
-            Console.WriteLine("[Info] This can be found under " + AppDomain.CurrentDomain.BaseDirectory + "/data");
+            Console.WriteLine("[Info] This can be found under " + AppDomain.CurrentDomain.BaseDirectory + "data");
             // Copy questions to root
-            File.Copy(QuestionPath, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data"), true);
+            File.Copy(InitialLoadQuestionsPath, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data"), true);
             ReadQuestionBank();
         }
     }
