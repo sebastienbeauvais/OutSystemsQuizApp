@@ -11,6 +11,15 @@ public class QuizManager
     private const string QuestionPath = "data/questions.json";
     private const string HistoryPath = "data/history.json";
 
+    public void EnsureDataFolderExists()
+    {
+        var folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data");
+        if (!Directory.Exists(folderPath))
+        {
+            Directory.CreateDirectory(folderPath);
+            Console.WriteLine("[Info] Created /data folder.");
+        }
+    }
     public void LoadQuestions()
     {
         if (File.Exists(QuestionPath))
@@ -20,7 +29,8 @@ public class QuizManager
         }
         else
         {
-            Console.WriteLine("Question file not found.");
+            Console.WriteLine("[Info] Question file not found.");
+            Console.WriteLine("[Info] Please upload your questions in the project root as a JSON file");
         }
     }
 

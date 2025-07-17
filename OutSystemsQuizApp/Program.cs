@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         var quizManager = new QuizManager();
+        quizManager.EnsureDataFolderExists();
         quizManager.LoadQuestions();
         quizManager.LoadHistory();
 
