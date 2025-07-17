@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Xml.Serialization;
 
 public class QuizManager
 {
@@ -10,6 +11,7 @@ public class QuizManager
     private ScoreHistory _history = new();
     private const string QuestionPath = "data/questions.json";
     private const string HistoryPath = "data/history.json";
+    private const string InitialLoadQuestionsPath = "Question/questions.json";
 
     public void EnsureDataFolderExists()
     {
@@ -24,14 +26,22 @@ public class QuizManager
     {
         if (File.Exists(QuestionPath))
         {
-            var json = File.ReadAllText(QuestionPath);
-            _questions = JsonSerializer.Deserialize<List<Question>>(json);
+            ReadQuestionBank();
         }
         else
         {
-            Console.WriteLine("[Info] Question file not found.");
-            Console.WriteLine("[Info] Please upload your questions in the project root as a JSON file");
+            Console.WriteLine("[Info] Transferring Question Bank to Root");
+            Console.WriteLine("[Info] If you want to add additional questions, please update the questions.json file.");
+            Console.WriteLine("[Info] This can be found under " + AppDomain.CurrentDomain.BaseDirectory + "/data");
+            // Copy questions to root
+            File.Copy(QuestionPath, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data"), true);
+            ReadQuestionBank();
         }
+    }
+    private void ReadQuestionBank()
+    {
+        var json = File.ReadAllText(QuestionPath);
+        _questions = JsonSerializer.Deserialize<List<Question>>(json);
     }
 
     public void LoadHistory()

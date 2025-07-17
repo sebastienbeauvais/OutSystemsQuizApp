@@ -1,0 +1,728 @@
+[
+  {
+    "Text": "What is the default lifecycle method that runs when a screen is loaded in a Reactive Web App?",
+    "Options": ["OnInitialize", "OnLoad", "OnReady", "OnRender"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which element in a Reactive App is used to define reusable UI components?",
+    "Options": ["Block", "Entity", "Action", "Structure"],
+    "CorrectOption": 0,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What client-side language do Reactive Web Apps primarily rely on?",
+    "Options": ["C#", "JavaScript", "Python", "Ruby"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which widget is used to fetch data asynchronously in Reactive Web Apps?",
+    "Options": ["Aggregate", "Client Action", "Data Action", "Server Action"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What happens when a screen input changes and is bound to a Data Action's input?",
+    "Options": ["The screen reloads", "The Data Action is automatically re-executed", "Nothing happens", "An error occurs"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Where are client-side logic elements executed in Reactive Web Apps?",
+    "Options": ["Server", "OutSystems Service Center", "Browser", "Mobile App Shell"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which action type executes on the server in a Reactive Web App?",
+    "Options": ["Client Action", "Data Action", "Server Action", "JavaScript Action"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "How do you handle a button click in a Reactive Web App?",
+    "Options": ["Create a Server Action", "Use an Event Handler", "Assign a Screen Action", "Bind it to a Block"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which of the following can *not* be used directly in a Reactive Web App?",
+    "Options": ["Server Action", "Entity", "Local Storage", "Traditional Web Block"],
+    "CorrectOption": 3,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which statement about lifecycle in Reactive Web Apps is correct?",
+    "Options": ["OnInitialize runs before OnRender", "OnDestroy runs after screen navigation", "OnReady only runs if the user clicks a button", "OnParametersChanged runs once per session"],
+    "CorrectOption": 0,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What type of variable stores values only while the screen is active?",
+    "Options": ["Session Variable", "Input Parameter", "Local Variable", "Global Variable"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What is the purpose of the `OnParametersChanged` event?",
+    "Options": ["Track URL changes", "Recalculate logic when screen inputs change", "Render dynamic styles", "Reset screen scroll position"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What is used to communicate from a Block to its parent Screen?",
+    "Options": ["Events", "Aggregates", "Data Actions", "Public Variables"],
+    "CorrectOption": 0,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which of these is *true* about blocks in Reactive Apps?",
+    "Options": ["They can't receive input parameters", "They can only be used in Mobile Apps", "They can raise events", "They must be inside a screen"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "How do you pass data into a Block in a Reactive App?",
+    "Options": ["Using Aggregates", "Calling a Server Action", "Input Parameters", "Static Variables"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which action type can be used to navigate between screens?",
+    "Options": ["Server Action", "Client Action", "JavaScript", "Aggregate"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What data type is used to pass a list of records to a widget?",
+    "Options": ["Text", "Entity Identifier", "List", "Structure"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which screen event is called each time input parameters change?",
+    "Options": ["OnInitialize", "OnReady", "OnDestroy", "OnParametersChanged"],
+    "CorrectOption": 3,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "When should you use a Data Action over an Aggregate?",
+    "Options": ["When fetching static content", "When using complex logic or conditional filters", "When calling client-side logic", "When loading data on app launch"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "Which widget should you use to conditionally display content on a screen?",
+    "Options": ["Switch", "If", "Expression", "Container"],
+    "CorrectOption": 1,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What is the purpose of the \"Fetch On Start\" option in a Data Action?",
+    "Options": ["It preloads screen UI", "It delays screen navigation", "It defines whether the action runs when the screen loads", "It prevents server calls"],
+    "CorrectOption": 2,
+    "Category": "Reactive Apps in Outsystems"
+  },
+  {
+    "Text": "What is the primary element used to model data in OutSystems?",
+    "Options": ["Entity", "Structure", "Variable", "Action"],
+    "CorrectOption": 0,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What is the purpose of an Entity Identifier?",
+    "Options": ["To store the entity name", "To uniquely identify each record", "To define entity relationships", "To store external keys"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which type of relationship is created when using a foreign key?",
+    "Options": ["One-to-One", "One-to-Many", "Many-to-Many", "None"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What does the 'Is Mandatory' property on an attribute do?",
+    "Options": ["Prevents editing the value", "Forces the attribute to have a value", "Enables encryption", "Sets it as a primary key"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What is the default primary key name in an Entity?",
+    "Options": ["PrimaryKey", "ID", "EntityID", "Identifier"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What does the ‘Auto Number’ data type do?",
+    "Options": ["Generates a unique ID manually", "Allows text values", "Auto-increments values for each new record", "Ensures alphabetical sorting"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "How do you define a many-to-many relationship in OutSystems?",
+    "Options": ["Using two One-to-Manys with a junction entity", "Directly linking both entities", "Using structures", "It is not possible"],
+    "CorrectOption": 0,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What data type should you use for storing Yes/No values?",
+    "Options": ["Text", "Integer", "Boolean", "Decimal"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which of the following is a static entity used for?",
+    "Options": ["Storing temporary screen data", "Defining fixed lists of values", "Importing external JSON", "Triggering server events"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What is the default behavior when an entity is renamed?",
+    "Options": ["All references break", "All usages are updated automatically", "It’s treated as a new entity", "Data is deleted"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which attribute type can store a decimal number with precision?",
+    "Options": ["Integer", "Auto Number", "Decimal", "Long Integer"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What is the purpose of the Index property on an Entity Attribute?",
+    "Options": ["Prevent null values", "Improve performance on queries", "Disable duplicate values", "Apply a regex filter"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which attribute automatically stores the last time a record was updated?",
+    "Options": ["LastModified", "UpdatedAt", "Timestamp", "ModifiedDate"],
+    "CorrectOption": 0,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What does the ‘Length’ property on a Text attribute define?",
+    "Options": ["The font size", "The display width", "The maximum number of characters allowed", "The encryption level"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What’s the maximum character length of a Text attribute by default?",
+    "Options": ["20", "50", "100", "2000"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which entity type is used to store fixed reference data like enums?",
+    "Options": ["Temporary Entity", "External Entity", "Static Entity", "Auto Entity"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which of the following is NOT a valid OutSystems attribute data type?",
+    "Options": ["Text", "Integer", "DateTime", "Float"],
+    "CorrectOption": 3,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "How can you prevent an attribute from being required?",
+    "Options": ["Set Is Mandatory = No", "Use a default value", "Delete the attribute", "Make it an identifier"],
+    "CorrectOption": 0,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "Which of the following data types is best for storing currency?",
+    "Options": ["Text", "Decimal", "Integer", "Auto Number"],
+    "CorrectOption": 1,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What must be present in a junction entity to model a many-to-many relationship?",
+    "Options": ["A unique ID only", "One foreign key", "Two foreign keys", "A static list"],
+    "CorrectOption": 2,
+    "Category": "Data Modeling"
+  },
+  {
+    "Text": "What element is primarily used to fetch data from an entity in Reactive Web Apps?",
+    "Options": ["Data Action", "Aggregate", "SQL Query", "Client Action"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which tool in OutSystems lets you visually filter and sort entity data?",
+    "Options": ["JavaScript", "Aggregate", "Server Action", "REST API"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which type of logic allows you to fetch data from external systems via HTTP?",
+    "Options": ["SQL Query", "REST API", "Aggregate", "Client Action"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What OutSystems element would you use to execute a complex query not possible with Aggregates?",
+    "Options": ["SQL Element", "Data Action", "Client Action", "Static Entity"],
+    "CorrectOption": 0,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What setting on a Data Action controls whether it runs on screen load?",
+    "Options": ["Run on Initialize", "Auto Fetch", "Fetch On Start", "Refresh On Load"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "When using an Aggregate, what does the 'Max. Records' property control?",
+    "Options": ["Total records in the database", "The number of records retrieved", "The number of entities queried", "The number of pages shown"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What action do you call to re-execute a Data Action manually?",
+    "Options": ["RunDataAction()", "Trigger()", "Fetch()", "RefreshData()"],
+    "CorrectOption": 3,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which property should you use in a SQL element to avoid SQL injection?",
+    "Options": ["Input Parameters", "Escape Strings", "Query Filters", "Sanitize()"],
+    "CorrectOption": 0,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which of the following is a key reason to use Aggregates over SQL elements?",
+    "Options": ["Aggregates are faster", "Aggregates are safer and visual", "SQL is deprecated", "Aggregates support REST calls"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "How do you paginate data using an Aggregate?",
+    "Options": ["Use a ForEach loop", "Enable server-side scrolling", "Set Start Index and Max Records", "Use a client action"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "How are filters added to Aggregates?",
+    "Options": ["Using WHERE clauses", "By setting an Expression", "Adding Filter conditions visually", "Using a REST call"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which data fetching method automatically binds to a Table Records widget?",
+    "Options": ["Data Action", "SQL", "Aggregate", "REST API"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What is the result of a Data Action?",
+    "Options": ["JavaScript output", "HTML response", "A variable with fetched data", "A client event"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What happens when a Data Action input parameter value changes?",
+    "Options": ["The screen reloads", "Nothing", "The Data Action re-runs automatically", "The value is cached"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which feature helps you call an external system and store the response?",
+    "Options": ["External Entity", "REST Integration", "Client Variable", "JSON Adapter"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which statement is TRUE about REST APIs in OutSystems?",
+    "Options": ["They can only be used in Mobile Apps", "They always run on the client", "They can be consumed and exposed", "They don’t support input parameters"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which function is used to fetch a single record by its identifier?",
+    "Options": ["GetByID()", "FetchSingle()", "Get<Entity>ById", "SelectFirst()"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "When using SQL elements, where are they executed?",
+    "Options": ["Browser", "Mobile device", "OutSystems server", "External database"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What variable is automatically created when using an Aggregate?",
+    "Options": ["AggregateList", "FetchResult", "Get<Entity>", "AggregateOutput"],
+    "CorrectOption": 2,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "What is the benefit of using indexed attributes in queries?",
+    "Options": ["Reduces memory usage", "Faster filtering and sorting", "Avoids duplicates", "Improves readability"],
+    "CorrectOption": 1,
+    "Category": "Fetching Data"
+  },
+  {
+    "Text": "Which type of action runs entirely on the client side in Reactive Web Apps?",
+    "Options": ["Server Action", "Client Action", "Data Action", "SQL Action"],
+    "CorrectOption": 1,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which action type is best for calling external systems via REST APIs?",
+    "Options": ["Client Action", "JavaScript", "Server Action", "Aggregate"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "How do you reuse logic across different screens or modules?",
+    "Options": ["Input Parameters", "Static Entities", "Public Actions", "JavaScript Functions"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which type of logic can be executed asynchronously in Reactive Apps?",
+    "Options": ["Client Action", "Server Action", "Data Action", "All of the above"],
+    "CorrectOption": 3,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What is the purpose of a Decision node in an action flow?",
+    "Options": ["To start the flow", "To store values", "To execute conditional logic", "To call an API"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What data type is returned by a Decision node?",
+    "Options": ["Boolean", "String", "Void", "Integer"],
+    "CorrectOption": 0,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which logic tool is used to loop over a list?",
+    "Options": ["If", "Switch", "For Each", "Assign"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What is the purpose of the Assign node?",
+    "Options": ["To make API calls", "To create variables", "To update variable values", "To run SQL queries"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What happens if an exception is not caught in a Server Action?",
+    "Options": ["The action continues", "An error is shown", "The screen reloads", "A warning is logged"],
+    "CorrectOption": 1,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which logic element is used to handle runtime exceptions?",
+    "Options": ["Raise Error", "Try-Catch", "Exception Handler", "Error Catch"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which node would you use to conditionally execute one of many possible branches?",
+    "Options": ["Decision", "Switch", "If", "Select"],
+    "CorrectOption": 1,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What is the maximum number of output paths a Switch node can have?",
+    "Options": ["1", "2", "Unlimited", "Only True and False"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "How are input parameters passed to a Server Action?",
+    "Options": ["Via session variables", "As public variables", "As arguments in the action call", "Automatically by the platform"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What keyword in OutSystems indicates that an action can be reused across modules?",
+    "Options": ["Shared", "Global", "Public", "Exposed"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which type of action is best used for manipulating screen variables?",
+    "Options": ["Server Action", "Aggregate", "Client Action", "SQL"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which logic node is used to explicitly exit from a flow before it ends?",
+    "Options": ["Stop", "End", "Return", "Break"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "When calling a Server Action from a Client Action, what must be done with the output?",
+    "Options": ["It’s ignored", "Bind it to a widget", "Assign it to a variable", "Store it in a static entity"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "Which type of action is best used to fetch data conditionally at runtime?",
+    "Options": ["SQL", "Client Action", "Data Action", "REST"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What is required for a Server Action to return data?",
+    "Options": ["It must have an Output parameter", "It must be marked as public", "It must use an Aggregate", "It must be called from a REST API"],
+    "CorrectOption": 0,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What happens if a logic loop never reaches its exit condition?",
+    "Options": ["It times out", "It throws a compile error", "It runs infinitely and may crash the app", "It skips execution"],
+    "CorrectOption": 2,
+    "Category": "Logic"
+  },
+  {
+    "Text": "What is the primary purpose of a Web Block in OutSystems?",
+    "Options": ["Store data", "Reuse UI components", "Define logic flows", "Secure screens"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which widget allows a user to enter multiple lines of text?",
+    "Options": ["Input", "Text", "Expression", "Text Area"],
+    "CorrectOption": 3,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which UI pattern helps display data in a vertical list format?",
+    "Options": ["Table Records", "List Records", "Form", "Container"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What is the purpose of using Themes in an OutSystems app?",
+    "Options": ["Add business logic", "Create custom widgets", "Apply consistent styling", "Build REST APIs"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which of the following is **not** a layout option in OutSystems UI?",
+    "Options": ["LayoutTopMenu", "LayoutRightMenu", "LayoutSidebar", "LayoutBottomMenu"],
+    "CorrectOption": 3,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "How are screen transitions typically handled in Reactive Web apps?",
+    "Options": ["JavaScript redirect", "Client-side navigation", "Full page reload", "Using database triggers"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Where should reusable styles and CSS rules be placed in an OutSystems module?",
+    "Options": ["In each screen", "Inside an action", "In the Theme", "In a Web Block"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What widget would you use to allow users to choose a single value from a list?",
+    "Options": ["Input", "Combo Box", "List Records", "Container"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which of the following allows you to **dynamically show or hide** UI elements?",
+    "Options": ["Expression", "Container", "If widget", "Theme"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What should be used to display static text on the screen?",
+    "Options": ["Expression", "Input", "Container", "List Records"],
+    "CorrectOption": 0,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What is the purpose of a Placeholder in OutSystems layouts?",
+    "Options": ["Render data from the server", "Display error messages", "Define flexible UI regions", "Store temporary values"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What type of widget is best suited to represent a clickable button?",
+    "Options": ["Expression", "Link", "Button", "Form"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "How are Web Blocks typically used in layout design?",
+    "Options": ["They replace containers", "To modularize common UI logic", "To define data models", "To define REST calls"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which widget allows the display of content in a tabbed layout?",
+    "Options": ["Accordion", "Tabs", "List Records", "Form"],
+    "CorrectOption": 1,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What is the purpose of using the Style Classes property on widgets?",
+    "Options": ["Define logic flow", "Bind data sources", "Apply predefined visual styles", "Generate runtime errors"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which widget is ideal for presenting a grid of editable rows?",
+    "Options": ["Editable Table", "List Records", "Table Records", "Data Grid"],
+    "CorrectOption": 0,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which OutSystems feature allows responsive layouts for multiple screen sizes?",
+    "Options": ["Media Queries", "Screen Templates", "Layout Widgets", "Theme Editor"],
+    "CorrectOption": 0,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What widget is used to group and label input fields?",
+    "Options": ["Form", "Group Box", "Container", "Card"],
+    "CorrectOption": 0,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "Which of the following is used to add custom CSS globally?",
+    "Options": ["Expression", "Screen", "Theme", "Web Block"],
+    "CorrectOption": 2,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What is the recommended way to reuse UI components across screens?",
+    "Options": ["Web Block", "Server Action", "Aggregate", "Form"],
+    "CorrectOption": 0,
+    "Category": "UI Design"
+  },
+  {
+    "Text": "What layer should contain logic for sending emails in a properly layered architecture?",
+    "Options": ["Core Layer", "End-User Layer", "Service Layer", "Integration Layer"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which layer is responsible for exposing APIs to external systems?",
+    "Options": ["Core Layer", "Integration Layer", "End-User Layer", "Orchestration Layer"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What is a good practice when publishing APIs in OutSystems?",
+    "Options": ["Expose all data entities", "Use internal logic only", "Version your APIs", "Avoid documentation"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which layer should contain screens and UI logic?",
+    "Options": ["Integration Layer", "End-User Layer", "Core Layer", "Service Layer"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What is the main purpose of the Core Layer in OutSystems architecture?",
+    "Options": ["Authentication", "Reusability of data and logic", "External integration", "Database connections"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which of these is a valid security feature in OutSystems?",
+    "Options": ["Hardcoded passwords", "Role-based access control", "Global variables", "Non-SSL API calls"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What should you use to protect data at rest?",
+    "Options": ["Minification", "Encryption", "Obfuscation", "Serialization"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "How can you prevent SQL injection in OutSystems?",
+    "Options": ["Dynamic SQL with input", "Use Aggregates or parameterized SQL", "Concatenate strings in queries", "Avoid WHERE clauses"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "In OutSystems, where is user authentication typically handled?",
+    "Options": ["Core Layer", "Service Layer", "End-User Layer", "Users Application or Authentication Logic"],
+    "CorrectOption": 3,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which practice enhances API security in OutSystems?",
+    "Options": ["Exposing all logic", "Using anonymous access", "Using HTTPS and tokens", "Allowing all IPs"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What is the recommended approach to expose internal logic to multiple apps?",
+    "Options": ["Duplicate it in each app", "Use reusable components in the Core layer", "Hardcode it in screens", "Use Integration Studio"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which OutSystems feature controls user access to screens and logic?",
+    "Options": ["Entities", "Site Properties", "Roles and Permissions", "Client Variables"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "How are APIs secured by default in OutSystems?",
+    "Options": ["Public and unsecured", "Secured by roles", "Secured by HTTPS", "Secured by user agent"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What happens when you incorrectly place logic in the End-User Layer?",
+    "Options": ["Improved performance", "Better maintainability", "Layer violation and poor reusability", "Security hardening"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Why is modular architecture important in OutSystems?",
+    "Options": ["To avoid service actions", "To simplify deployment", "To enforce scalability and maintainability", "To use more screens"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What should be avoided when integrating with external systems?",
+    "Options": ["Use of Integration Layer", "Timeouts", "Retry logic", "Hardcoded credentials"],
+    "CorrectOption": 3,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which tool helps you understand architecture dependencies?",
+    "Options": ["TrueChange", "Service Studio Console", "Architecture Dashboard", "OutSystems Inspector"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "How do you restrict access to a REST API method in OutSystems?",
+    "Options": ["By default all access is restricted", "Set roles in the method's properties", "Use Aggregates", "Make it a private action"],
+    "CorrectOption": 1,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "What’s a good practice when building a public component?",
+    "Options": ["Expose all server actions", "Avoid documentation", "Hide unnecessary elements and provide documentation", "Force internal logic use"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  },
+  {
+    "Text": "Which type of logic should never go in the Integration Layer?",
+    "Options": ["SOAP calls", "JSON parsing", "Authentication logic", "REST API calls"],
+    "CorrectOption": 2,
+    "Category": "Architecture and Security"
+  }
+]
